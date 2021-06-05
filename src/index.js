@@ -1,4 +1,4 @@
-let welcomeName = prompt("Qual o seu nome?");
+let welcomeName = prompt("Por favor se identifique como quiser:");
 document.getElementById("welcome").innerHTML = "Olá, " + welcomeName + "!";
 
 
