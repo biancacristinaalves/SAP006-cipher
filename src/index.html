@@ -15,38 +15,45 @@
       </header>
 
         <!--Primeiras frases-->
-        <h1 class="bemvinda" id="welcome"></h1>
-        <h2 class="secrets">Seja bem vindo(a) ao Secrets Planet!!</h2>
-        <p class="secrets">Aqui você consegue enviar mensagens secretas para todas as pessoas e seus mundos apenas com um clique.<br>
+      <h1 class="bemvinda" id="welcome"></h1>
+        <h2 class="secrets">Seja bem vinda ao Secrets Planet!!</h2>
+          <p class="secrets">Aqui você consegue enviar mensagens secretas para todas as pessoas e seus mundos com apenas um clique.<br>
         Todas as mensagens são codificadas instantaneamente através da <strong> Cifra de César</strong>, com isso ninguém conseguirá ver o que está sendo escrito e nem enviado.</p>
-        <p class="secrets">Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 25):</em></p>
+          <p class="secrets">Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 25):</em></p>
 
         <!-- caixa para colocar o número da cifra-->
-         <input type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?"><br>
-         <button onclick="myFunction()">OK</button>
+        <div class="centralizar">
+          <input type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?"><br>
+            <button onclick="myFunction()">OK</button>
         </div>
-        <!--formulário para a cifra-->
+      <!--formulário para a cifra-->
       <form action="/pagina-processa-dados-do-form" method="post">
         <p class="secrets">Ótimo, então agora é só aproveitar e escrever aquela mensagem especial!!</em></p>
-          <div>
+          <div class="centralizar">
             <label for="email">E-mail:</label><br>
             <input type="email" id="email" placeholder="Insira o e-mail"><br>
           </div>
-          <div>
+          <div class="centralizar">
             <label for="msg">Digite aqui:</label><br>
             <textarea id="msg" placeholder="Qual sua mensagem?"></textarea></div><br>
           </div>
-          <div class="button">
-           <button onclick="myFunction()">Codificar</button>
+          <div class="centralizar">
+            <!--site para explicação da cifra de césar-->
+              <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">O que é Cifra de César???</a>  
+          </div>
+          <div class="centralizar">
+            <button onclick="myFunction()">Codificar</button>
           </div>
       </form>
-        <!--site para explicação da cifra de césar-->
-        <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">O que é Cifra de César???</a>  
-        <!--figura final-->
-        <figure>
-          <img src="icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
-        </figure>
-      <footer><strong>Realizado por Bianca Alves para &ltLABORATÓRIA&gt</strong>.</footer>
+      <!--figura final-->
+      <div class="centralizar">
+          <figure>
+            <img src="icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
+          </figure>
+      </div>
+      <div class="centralizar">
+        <footer><strong>Realizado por Bianca Alves para &ltLABORATÓRIA&gt</strong>.</footer>
+      </div>
       <script src="index.js" type="module"></script>
       <script src="cipher.js" type="module"></script>
     </main>
