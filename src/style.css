@@ -4,6 +4,8 @@
     border: 20px;
     border-radius: 5px;
     text-align: center;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 
 body {
@@ -16,6 +18,8 @@ body {
 
 }
 
-.botao{
-    background-position: center;
+.centralizar{
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
