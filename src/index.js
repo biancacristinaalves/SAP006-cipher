@@ -1,15 +1,9 @@
-let welcomeName = prompt("Por favor se identifique como quiser:");
-document.getElementById("welcome").innerHTML = "Olá, " + welcomeName + "!";
-
-
-
-
-
-
-
+console.log(cipher);
 import cipher from './cipher.js';
 
-console.log(cipher);
+
+let welcomeName = prompt("Qual seu nome?");
+document.getElementById("welcome").innerHTML = "Olá, " + welcomeName + "!";
 
 
 
