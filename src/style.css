@@ -1,5 +1,5 @@
 .bemvinda, .secrets {
-    background-color: rgb(195, 207, 206);
+    background-color: rgba(195, 207, 206, 0.685);
     background-position: center;
     border: 20px;
     border-radius: 5px;
@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(fundo.jpg);
+    background-image: url(img/fundo.jpg);
 }
 
 .planeta{
@@ -22,5 +22,6 @@ body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-    color: rgb(139, 42, 126);
+    color: rgb(214, 46, 214);
 }
+

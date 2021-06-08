@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Cifra de César</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon"/>
   </head>
 
   <body>
     <main>
       <header>
-         <img src="terra.jpg" alt="Terra logo" title="Em qual você está?"> <!-- logo no cabeçalho-->
+         <img src="img/cabeçalho.jpg" alt="Terra logo" title="Em qual você está?"> <!-- logo no cabeçalho-->
       </header>
 
         <!--Primeiras frases-->
@@ -22,13 +22,13 @@
             Todas as mensagens são codificadas instantaneamente através da <strong> Cifra de César</strong>, com isso ninguém conseguirá ver o que está sendo enviado.</p>
             <div class="centralizar">
               <!--site para explicação da cifra de césar-->
-                <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">O que é Cifra de César???</a>  
+                <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(247, 51, 247)">O que é Cifra de César? Clique aqui.</a>  
             </div>
           <p class="secrets">Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 25):</em></p>
 
         <!-- caixa para colocar o número da cifra-->
         <div class="centralizar">
-          <input type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?"><br>
+            <input type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?"><br>
             <button onclick="myFunction()">OK</button>
         </div>
       <!--formulário para a cifra-->
@@ -40,21 +40,25 @@
           </div>
           <div class="centralizar">
             <label for="msg">Digite aqui:</label><br>
-            <textarea id="msg" placeholder="Qual sua mensagem?"></textarea></div><br>
+            <textarea id="msg" placeholder="Qual sua mensagem?" style="resize: none"></textarea><br>
           </div>
           <div class="centralizar">
             <button onclick="myFunction()">Codificar</button>
           </div>
+          <div class="centralizar">
+            <label for="msg">Visualize:</label><br>
+            <textarea id="msg" placeholder="Veja sua mensagem codificada aqui!" style="resize: none"></textarea><br>
+          </div>
       </form>
       <!--figura final-->
-      <div class="centralizar">
+        <div class="centralizar">
           <figure>
-            <img src="icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
+            <img src="img/icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
           </figure>
-      </div>
-      <div class="centralizar">
-        <footer><strong>Autor: Bianca Alves para &ltLABORATÓRIA&gt</strong>.</footer>
-      </div>
+        </div>
+        <div class="centralizar">
+          <footer><strong>Autor: Bianca Alves para &ltLABORATÓRIA&gt - 2021.</strong></footer>
+        </div>
       <script src="index.js" type="module"></script>
       <script src="cipher.js" type="module"></script>
     </main>
