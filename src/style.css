@@ -1,5 +1,5 @@
 .bemvinda, .secrets {
-    background-color: rgba(195, 207, 206, 0.685);
+    background-color: rgba(195, 207, 206, 0.747);
     background-position: center;
     border: 20px;
     border-radius: 5px;
@@ -22,6 +22,6 @@ body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-    color: rgb(214, 46, 214);
+    color: rgb(56, 250, 201);
 }
 
