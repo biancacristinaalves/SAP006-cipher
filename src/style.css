@@ -1,27 +1,37 @@
-.bemvinda, .secrets {
-    background-color: rgba(195, 207, 206, 0.747);
-    background-position: center;
-    border: 20px;
-    border-radius: 5px;
-    text-align: center;
-    margin-left: 240px;
-    margin-right: 240px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color:white;
 }
+
+.centralizar{
+    text-align: center;
+    color: rgb(56, 250, 201);
+    width: min(100vw,900px);
+    margin: 0 auto;
+    background-color: rgba(245, 245, 245, 0.664);
+}
+
+.input{
+    width: 80%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+}
+
 
 .planeta{
     width: 5px;
     height: 5px;
 
 }
-
-.centralizar{
-    display: flex;
-	justify-content: center;
-	align-items: center;
-    color: rgb(56, 250, 201);
-}
-
