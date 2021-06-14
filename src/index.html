@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt"> <!--Entender a linguagem-->
-  <head>
-    <meta charset="utf-8"> <!--Entender os caracteres-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Cifra de César</title>
-    <link rel="stylesheet" href="style.css" /> <!--Link com o CSS-->
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon"/> <!--Ícone do site (terra)-->
-  </head>
-  <body>
+  <html lang="pt"> <!--Entender a linguagem-->
+    <head>
+      <meta charset="utf-8"> <!--Entender os caracteres-->
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Cifra de César</title>
+      <link rel="stylesheet" href="style.css" /> <!--Link com o CSS-->
+      <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon"/> <!--Ícone do site (terra)-->
+    </head>
+    <body>
+      <img src="img/cabeçalho.jpg" alt="Logo cabeçalho" title="De qual planeta você é?"> <!-- logo no cabeçalho-->
     <header class="centralizar">
       <h1 class="bemvinda" id="welcome">Seja bem vinda ao Secrets Planet!!</h1>
-      <!-- logo no cabeçalho-->
-      <!--<img src="img/cabeçalho.jpg" alt="Logo cabeçalho" title="De qual planeta você é?"> -->
     </header>
       <main class="centralizar">
-        <!--Primeiras frases-->
-        <section>
-          <p class="secrets">Com o passar dos anos <s>(bilhões de anos)</s> e com o avanço da tecnologia e da humanidade, novos planetas foram descobertos para poder habitar todos os tipos de espécies existentes. 
+        <h1 id="welcome">Seja bem vinda ao Secrets Planet!!</h1>
+          <!--Primeiras frases-->
+          <section>
+            <p>Com o passar dos anos <s>(bilhões de anos)</s> e com o avanço da tecnologia e da humanidade, novos planetas foram descobertos para poder habitar todos os tipos de espécies existentes. 
               Para facilitar a comunicação interestelar e o envio de planos e mensagens secretas, foi criado este espaço onde você consegue enviar esse tipo de mensagens para todas as pessoas e seus mundos com apenas um clique.<br>
               Todas as mensagens são codificadas instantaneamente através da <strong> Cifra de César</strong>, com isso ninguém conseguirá ver o que está sendo enviado.</p>
-              <!--Link para o site de explicação da cifra de césar-->
-              <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(247, 51, 247)" title="Clique aqui!" >O que é Cifra de César?</a>       
-        </section>
+              <!--Link para o site de explicação da cifra de césar--><br>
+            <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(247, 51, 247)" title="Clique aqui!" >O que é Cifra de César?</a>
+          </section>
 
-            <form> 
-              <h3 class="secrets">Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 26):</em></h3>
-                <!--Caixa para colocar o número da cifra-->
-                <input class="input" id="offset" type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?" min="0"><br>
-                <button id="cifra">OK</button>
+        <form><br> 
+          <h3>Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 26):</em></h3>
+            <!--Caixa para colocar o número da cifra-->
+            <input class="input" id="offset" type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?" min="0">
+            
+            <!--<button id="cifra">OK</button>-->
 
-              <!--formulário para a cifra-->
-              <h3 class="secrets">Ótimo, então agora é só colocar a mão na massa!!</h3>
-                  <label for="email">Destinatário:</label><br> <!--Campo para e-mail-->
-                  <input class="input" type="email" id="email" placeholder="Insira o e-mail">
+            <!--formulário para a cifra-->
+          <h3>Ótimo, então agora é só colocar a mão na massa!!</h3><br>
+            <label for="email">Destinatário:</label><br> <!--Campo para e-mail-->
+            <input class="input" type="email" id="email" placeholder="Insira o e-mail">
 
-                 <p><label for="text">Digite aqui:</label></p><!--Campo para a mensagem-->
-                  <textarea class="input" id="mensagem" style="resize: none" type="text" placeholder="Qual sua mensagem?" ></textarea><br> <!--Resize retira o arrastar da caixa-->
-                  
-                  <button id="codificar">Codificar</button>
-                  <p><label for="text">Visualize:</label></p>
-                  <textarea class="input" id="visualizar" style="resize: none" placeholder="Veja sua mensagem aqui!"></textarea><br>
-                  
-                  <button id="decodificar">Decodificar</button>
-                
+            <p><label for="text">Digite aqui:</label></p><!--Campo para a mensagem-->
+              <textarea class="input" id="mensagem" style="resize: none" type="text" placeholder="Qual sua mensagem?" ></textarea><br> <!--Resize retira o arrastar da caixa-->
+              <button id="codificar">Codificar</button>
+            
+            <p><label for="text">Visualize:</label></p>
+              <textarea class="input" id="visualizar" style="resize: none" placeholder="Veja sua mensagem aqui!"></textarea><br>
+              <button id="decodificar">Decodificar</button>    
         </form>
            
-            <!--Figura rodapé-->
-            <div class="centralizar">
-              <figure>
-                <img src="img/icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
-              </figure>
-            </div>
-            <div class="centralizar">
-              <footer><strong>Desenvolvido por Bianca Alves para &ltLABORATÓRIA&gt - 2021.</strong></footer> <!-- Informações rodapé-->
-            </div>
+          <!--Figura rodapé-->
+          <figure><br>
+            <img src="img/icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
+          </figure>
+          <footer><strong>Desenvolvido por Bianca Alves para &ltLABORATÓRIA&gt - 2021.</strong></footer> <!-- Informações rodapé-->
         <script type="module" src="index.js"></script>
         <script type="module" src="cipher.js"></script>
       </main>
-  </body>
-</html>
+    </body>
+  </html>
