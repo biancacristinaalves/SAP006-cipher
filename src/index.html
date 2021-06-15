@@ -13,35 +13,36 @@
       <h1 class="bemvinda" id="welcome">Seja bem vinda ao Secrets Planet!!</h1>
     </header>
       <main class="centralizar">
-        <h1 id="welcome">Seja bem vinda ao Secrets Planet!!</h1>
+        <h1>Seja bem vinda ao Secrets Planet!!</h1>
+        <br>
           <!--Primeiras frases-->
           <section>
             <p>Com o passar dos anos <s>(bilhões de anos)</s> e com o avanço da tecnologia e da humanidade, novos planetas foram descobertos para poder habitar todos os tipos de espécies existentes. 
               Para facilitar a comunicação interestelar e o envio de planos e mensagens secretas, foi criado este espaço onde você consegue enviar esse tipo de mensagens para todas as pessoas e seus mundos com apenas um clique.<br>
               Todas as mensagens são codificadas instantaneamente através da <strong> Cifra de César</strong>, com isso ninguém conseguirá ver o que está sendo enviado.</p>
               <!--Link para o site de explicação da cifra de césar--><br>
-            <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(247, 51, 247)" title="Clique aqui!" >O que é Cifra de César?</a>
+            <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(231, 245, 35)" title="Clique aqui!" >O que é Cifra de César?</a>
           </section>
 
         <form><br> 
-          <h3>Para começarmos, preciso que me diga qual o tipo de codificação que deseja <em>(números entre 0 e 26):</em></h3>
+          <h3>Para começarmos, preciso que me diga qual o tipo de codificação que deseja: <em>(números entre 0 e 26):</em></h3>
             <!--Caixa para colocar o número da cifra-->
             <input class="input" id="offset" type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?" min="0">
-            
-            <!--<button id="cifra">OK</button>-->
+            <!--<button id="cifra">OK</button> ------- RETIREI ESSE BOTÃO, NÃO FAZIA NADA-->
 
             <!--formulário para a cifra-->
           <h3>Ótimo, então agora é só colocar a mão na massa!!</h3><br>
             <label for="email">Destinatário:</label><br> <!--Campo para e-mail-->
             <input class="input" type="email" id="email" placeholder="Insira o e-mail">
 
-            <p><label for="text">Digite aqui:</label></p><!--Campo para a mensagem-->
+            <p><label for="text">Digite aqui <em>(letras maiúsculas)</em>:</label></p><!--Campo para a mensagem-->
               <textarea class="input" id="mensagem" style="resize: none" type="text" placeholder="Qual sua mensagem?" ></textarea><br> <!--Resize retira o arrastar da caixa-->
               <button id="codificar">Codificar</button>
+              <button id="decodificar">Decodificar</button> 
             
-            <p><label for="text">Visualize:</label></p>
-              <textarea class="input" id="visualizar" style="resize: none" placeholder="Veja sua mensagem aqui!"></textarea><br>
-              <button id="decodificar">Decodificar</button>    
+            <p><label for="text">Visualize:</label></p> <!--!!!!!!!!!!!!!!!!!fazer uma DIV para conseguir estiliar!!!!!!!!!!!!!!!!!!!!-->
+            <br>
+              <textarea class="input" id="visualizar" style="resize: none" placeholder="Veja sua mensagem aqui!"></textarea><br>   
         </form>
            
           <!--Figura rodapé-->
