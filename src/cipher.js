@@ -14,8 +14,8 @@ const cipher = {
     code+=String.fromCharCode(encrypt);                     // e vai chamar transformando em letra denovo
     }
   }
-  console.log (code);
-  return code;                                             //pedir para retornar a codificação depois dele printar
+    console.log (code);
+    return code;                                             //pedir para retornar a codificação depois dele printar
 },
   
   //função de decodificar
@@ -30,8 +30,8 @@ const cipher = {
      decode+=String.fromCharCode(decrypt);
       }
     }
-    console.log (decode);
-    return decode;
+      console.log (decode);
+      return decode;
   }
 }
 export default cipher; 
