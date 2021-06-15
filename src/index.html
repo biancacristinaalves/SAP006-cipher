@@ -6,6 +6,7 @@
       <title>Cifra de César</title>
       <link rel="stylesheet" href="style.css" /> <!--Link com o CSS-->
       <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon"/> <!--Ícone do site (terra)-->
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     </head>
     <body>
       <img src="img/cabeçalho.jpg" alt="Logo cabeçalho" title="De qual planeta você é?"> <!-- logo no cabeçalho-->
@@ -13,6 +14,7 @@
       <h1 class="bemvinda" id="welcome">Seja bem vinda ao Secrets Planet!!</h1>
     </header>
       <main class="centralizar">
+        <i class="em em-alien" aria-role="presentation" aria-label="EXTRATERRESTRIAL ALIEN"></i>
         <h1>Seja bem vinda ao Secrets Planet!!</h1>
         <br>
           <!--Primeiras frases-->
@@ -21,27 +23,29 @@
               Para facilitar a comunicação interestelar e o envio de planos e mensagens secretas, foi criado este espaço onde você consegue enviar esse tipo de mensagens para todas as pessoas e seus mundos com apenas um clique.<br>
               Todas as mensagens são codificadas instantaneamente através da <strong> Cifra de César</strong>, com isso ninguém conseguirá ver o que está sendo enviado.</p>
               <!--Link para o site de explicação da cifra de césar--><br>
+              <i class="em em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>
             <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" style="color:rgb(231, 245, 35)" title="Clique aqui!" >O que é Cifra de César?</a>
           </section>
 
         <form><br> 
-          <h3>Para começarmos, preciso que me diga qual o tipo de codificação que deseja: <em>(números entre 0 e 26):</em></h3>
+          <h4>Para começarmos, preciso que me diga qual codificação que deseja: <em>(números entre 1 e 26):</em></h4>
             <!--Caixa para colocar o número da cifra-->
             <input class="input" id="offset" type="number" name="input" value="Digite aqui" placeholder="Qual sua cifra?" min="0">
             <!--<button id="cifra">OK</button> ------- RETIREI ESSE BOTÃO, NÃO FAZIA NADA-->
 
             <!--formulário para a cifra-->
-          <h3>Ótimo, então agora é só colocar a mão na massa!!</h3><br>
+          <h4>Ótimo, então agora é só colocar a mão na massa!!</h4><br>
+            <i class="em em-e-mail" aria-role="presentation" aria-label="E-MAIL SYMBOL"></i>
             <label for="email">Destinatário:</label><br> <!--Campo para e-mail-->
             <input class="input" type="email" id="email" placeholder="Insira o e-mail">
 
             <p><label for="text">Digite aqui <em>(letras maiúsculas)</em>:</label></p><!--Campo para a mensagem-->
               <textarea class="input" id="mensagem" style="resize: none" type="text" placeholder="Qual sua mensagem?" ></textarea><br> <!--Resize retira o arrastar da caixa-->
               <button id="codificar">Codificar</button>
+              <i class="em em-closed_lock_with_key" aria-role="presentation" aria-label="CLOSED LOCK WITH KEY"></i>
               <button id="decodificar">Decodificar</button> 
-            
+              <i class="em em-lock" aria-role="presentation" aria-label="LOCK"></i>
             <p><label for="text">Visualize:</label></p> <!--!!!!!!!!!!!!!!!!!fazer uma DIV para conseguir estiliar!!!!!!!!!!!!!!!!!!!!-->
-            <br>
               <textarea class="input" id="visualizar" style="resize: none" placeholder="Veja sua mensagem aqui!"></textarea><br>   
         </form>
            
@@ -49,7 +53,8 @@
           <figure><br>
             <img src="img/icone.jpg" alt="Planeta" title="Ícone" style="width: 50px;">
           </figure>
-          <footer><strong>Desenvolvido por Bianca Alves para &ltLABORATÓRIA&gt - 2021.</strong></footer> <!-- Informações rodapé-->
+          <footer><strong>Desenvolvido por Bianca Alves | &ltLABORATÓRIA&gt | 2021.</strong></footer>
+          <i class="em em-flag-br" aria-role="presentation" aria-label="Brazil Flag"></i> <!-- Informações rodapé-->
         <script type="module" src="index.js"></script>
         <script type="module" src="cipher.js"></script>
       </main>
