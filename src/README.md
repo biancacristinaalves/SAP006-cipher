@@ -59,6 +59,11 @@ Para isso foi implementado:
 - Um input para receber um texto codificado;
 - Um botão para Descriptografar o texto;
 
+Protótipo Figma:
+
+<img src="https://ik.imagekit.io/llneva6qvex/figma_WfnNLQvKsr.png">
+
+
 ## 👩🏻‍🦰 4. Usuários
 Pessoas que desejam enviar uma mensagem para outras espécies de outros planetas.
 
